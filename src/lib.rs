@@ -9,6 +9,7 @@ pub use bitvec::BitArr;
 #[macro_export]
 macro_rules! sequential_id_alloc {
     ($ty:ident, $output_ty:ident, $max:expr, $arr_ty:ident) => {
+        #[derive(Debug)]
 pub struct $ty<T = $output_ty, A = $crate::BitArr![for $max - 1, in $arr_ty]> {
             next_ptr: usize,
             bits: A,
