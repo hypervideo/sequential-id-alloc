@@ -5,7 +5,6 @@ pub use bitvec::BitArr;
 /// The allocator will allocate new ids sequentially from 0 to u8::MAX. Unlike
 /// other bitmap / slab allocators, freed ids will not be reused right away,
 /// only when the next id pointer wraps around.
-
 #[macro_export]
 macro_rules! sequential_id_alloc {
     ($ty:ident, $output_ty:ident, $max:expr, $arr_ty:ident) => {
