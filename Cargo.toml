@@ -1,7 +1,13 @@
 [package]
 name = "sequential-id-alloc"
 version = "0.1.0"
+authors = ["Robert Krahn <robert@hyper.video>", "Pablo Sichert <pablo@hyper.video>"]
+categories = ["data-structures"]
 edition = "2021"
+homepage = "https://github.com/hypervideo/sequential-id-alloc"
+license = "MPL-2.0"
+repository = "https://github.com/hypervideo/sequential-id-alloc"
+description = "A simple sequential ID allocator that guarantees sequential allocation"
 
 [dependencies]
 bitvec = { version = "1", default-features = false }
